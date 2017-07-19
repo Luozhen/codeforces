@@ -8,12 +8,13 @@
 #include "Domino_piling.h"
 #include "Team.h"
 #include "Bit++.h"
+#include "Football.h"
 #include <string>
 using namespace std;
 
 int main() {
     cout << "Hello, World!" << std::endl;
 
-    cout << bt_solution() << endl;
+    cout << football_solution() << endl;
     return 0;
 }
