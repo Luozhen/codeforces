@@ -7,11 +7,13 @@
 #include "String_Task.h"
 #include "Domino_piling.h"
 #include "Team.h"
+#include "Bit++.h"
+#include <string>
 using namespace std;
 
 int main() {
     cout << "Hello, World!" << std::endl;
 
-    cout << team_solution() << endl;
+    cout << bt_solution() << endl;
     return 0;
 }
