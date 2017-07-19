@@ -35,14 +35,15 @@ using namespace std;
 //3 3
 //output
 //4
-int dp_solution(){
+int dp_solution() {
     int m, n;
     cin >> m >> n;
-    if((m * n) % 2) return (m / 2) * n + n / 2;
-    else{
-        if(m % 2 == 0)
+    // return m * n / 2;
+    if ((m * n) % 2) return (m / 2) * n + n / 2;
+    else {
+        if (m % 2 == 0)
             return m / 2 * n;
-        else if(n % 2 == 0)
+        else if (n % 2 == 0)
             return n / 2 * m;
     }
 }
