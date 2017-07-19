@@ -6,11 +6,12 @@
 #include "Next_round.h"
 #include "String_Task.h"
 #include "Domino_piling.h"
+#include "Team.h"
 using namespace std;
 
 int main() {
     cout << "Hello, World!" << std::endl;
 
-    cout << dp_solution() << endl;
+    cout << team_solution() << endl;
     return 0;
 }
