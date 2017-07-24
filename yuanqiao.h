@@ -22,7 +22,7 @@ int lengthOfLongestSubstring(string str){
     array[str[0]] = 0;
     int count = 1, max_count = 1;
     for (int i = 1; i < len; ++i) {
-        if(str[i] != str[i - 1] && array[str[i]] == -1){
+        if(str[i] != str[i - 1] && i - array[str[i]] > count){
             count++;
         }
         else{
