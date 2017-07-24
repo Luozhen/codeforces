@@ -13,24 +13,23 @@ const int max_len = 256;
 using namespace std;
 
 int lengthOfLongestSubstring(string str){
-    int array[max_len] = {0};
+    int array[max_len];
+    for (int j = 0; j < max_len; ++j) {
+        array[j] = -1;
+    }
     int len = str.length();
     if(len < 2) return len;
-    array[str[0]] = 1;
+    array[str[0]] = 0;
     int count = 1, max_count = 1;
     for (int i = 1; i < len; ++i) {
-        if(str[i] != str[i - 1] && array[str[i]] == 0){
-            array[str[i]] = 1;
+        if(str[i] != str[i - 1] && array[str[i]] == -1){
             count++;
         }
         else{
             if(count > max_count) max_count = count;
-            for (int j = 0; j < max_len; ++j) {
-                array[j] = 0;
-            }
-            count = 1;
-            array[str[i]] = 1;
+            count = i - array[str[i]];
         }
+        array[str[i]] = i;
     }
     if(count > max_count) max_count = count;
     return max_count;
