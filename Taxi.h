@@ -89,7 +89,7 @@ int main(){
         else if((k == 1) && sum[k])
             count += (sum[1] % capacity) ? (sum[1] / capacity + 1) : (sum[1] / 4);
     }
-
+// A[1]=std::max(A[1]-A[3],0);std::cout<<A[3]+A[4]+(A[1]+2*A[2]+3)/4;}
     cout << count << endl;
     return 0;
 }
