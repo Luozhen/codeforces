@@ -24,12 +24,7 @@ int MN_solution(){
 }
 
 // 全排列 edition 1
-void swap(char & a, char & b){
-    a ^= b;
-    b ^= a;
-    a ^= b;
-}
-void pailie(set<string>& res, string array, int start, int end){
+void pailie_recur(set<string>& res, string array, int start, int end){
     if((end - start) == 1){
         res.insert(array);
         swap(array[start], array[end]);
@@ -37,12 +32,10 @@ void pailie(set<string>& res, string array, int start, int end){
         return ;
     }
     else{
-        res.insert(array);
-        pailie(res, array, start, end - 1);
-        for (int i = end - 1; i >= 0; --i) {
+        for (int i = end ; i >= 0; --i) {
             swap(array[i], array[end]);
-            pailie(res, array, start, end - 1);
-            swap(array[i], array[end]);
+            pailie_recur(res, array, start, end - 1);
+            //swap(array[i], array[end]);
         }
     }
 }
@@ -55,7 +48,7 @@ int luozhen_main(){
         res.insert(array);
         return 0;
     }
-    pailie(res, array, 0, len - 1);
+    pailie_recur(res, array, 0, len - 1);
     set<string>::iterator i;
     for (i = res.begin(); i != res.end(); ++i) {
         cout << *i << endl;
@@ -64,6 +57,14 @@ int luozhen_main(){
 
 // 别人家的全排列
 //递归全排列，start 为全排列开始的下标， length 为str数组的长度
+//交换两个字符
+void Swap(char *a ,char *b)
+{
+    char temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 void AllRange(char* str,int start,int length)
 {
     if(start == length-1)
@@ -74,9 +75,9 @@ void AllRange(char* str,int start,int length)
     {
         for(int i=start;i<=length-1;i++)
         {	//从下标为start的数开始，分别与它后面的数字交换
-            swap(str[start],str[i]);
+            Swap(&str[start],&str[i]);
             AllRange(str,start+1,length);
-            swap(str[start],str[i]);
+            Swap(&str[start],&str[i]);
         }
     }
 }
