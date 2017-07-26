@@ -43,7 +43,7 @@ const int max_len_taxi = 100;
 //the first and the second group (consisting of one and two children, correspondingly).
 //There are other ways to sort the groups into four cars.
 
-int main(){
+int taxi_solution(){
     int n, capacity = 4, count = 0;
     cin >> n;
     int sum[max_len_taxi] = {n};
