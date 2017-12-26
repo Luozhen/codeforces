@@ -8,14 +8,23 @@
 #endif //CODEFORCES_TEST_H
 #include <iostream>
 #include <stdio.h>
+#include <string>
 #include <time.h>
 using namespace std;
 
 int test_main(){
+
+    string str = "lalal" + to_string(1) + "erere";
     time_t t = time(NULL);
+    time_t ts = time(NULL);
+    time_t t2 = ts-(ts+28800)%86400;
+
+
+    time_t t1 = t + 9;
+    cout << (t - t1) << " " << (t - t1) / 10 << endl;
     cout << "time:" << t << endl;
 
-    struct tm* current_time = localtime(&t);
+    struct tm* current_time = localtime(&t2);
     printf("current year is %d;current month is %d;current date of month is %d\r\n",
            1900 + current_time->tm_year,
            1 + current_time->tm_mon/*此month的范围为0-11*/,
@@ -39,7 +48,8 @@ int test_main(){
            current_time->tm_sec);
 
     /*格林威治时间*/
-    struct tm* current_gmtime = gmtime(&t);
+    struct tm* current_gmtime = gmtime(&ts);
+    cout << time((time_t *)current_gmtime) << endl;
 
     printf("格林威治时间：%d-%d-%d %d:%d:%d\r\n",
            current_gmtime->tm_year + 1900,
@@ -50,6 +60,6 @@ int test_main(){
            current_gmtime->tm_sec);
 
 
-    system("pause");
+    //system("pause");
     return 0;
 }

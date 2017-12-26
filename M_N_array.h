@@ -23,6 +23,10 @@ int MN_solution(){
 
 }
 
+// --------------------------全组合--------------------------
+
+
+// --------------------------全排列--------------------------
 // 全排列 edition 1
 void pailie_recur(set<string>& res, string array, int start, int end){
     if((end - start) == 1){
