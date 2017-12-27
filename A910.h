@@ -7,6 +7,9 @@
 
 #endif //CODEFORCES_A910_H
 
+#include <iostream>
+#include <set>
+using namespace std;
 //A. The Way to Home
 //time limit per test1 second
 //memory limit per test256 megabytes
@@ -54,3 +57,40 @@
 //
 //In the second example the frog can not reach home, because to make it she need to jump on a distance three, but the maximum length of her jump equals to two.
 //
+#define MaxSize 200
+void the_way_to_home(){
+    int n, d;
+    cin >> n >> d;
+    string str;
+    cin >> str;
+    int arr[MaxSize];
+    int i, j, k = 0;
+    for (i = 0, j = 0; i < n; ++i) {
+        if(str[i] == '1'){
+            arr[j++] = i + 1;
+        }
+    }
+    int pre = arr[0], cnt = 0, flag = 0;
+    while (k < j) {
+        if((arr[k] - pre) <= d) {
+            k++;
+            continue;
+        }
+        else {
+            if(arr[k] > arr[k - 1] + d) {
+                flag = 1;
+                break;
+            } else {
+                pre = arr[k - 1];
+                cnt++;
+            }
+        }
+    }
+    if(flag) {
+        cout << -1 << endl;
+    }
+    else if(pre < arr[k - 1]) {
+        cout << cnt + 1 << endl;
+    }
+    return;
+}

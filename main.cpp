@@ -26,9 +26,10 @@
 #include <boost/algorithm/string.hpp>
 #include "test_io.h"
 #include "A266.h"
+#include "A910.h"
 using namespace std;
 
 int main() {
-    stone_on_the_table();
+    the_way_to_home();
     return 0;
 }

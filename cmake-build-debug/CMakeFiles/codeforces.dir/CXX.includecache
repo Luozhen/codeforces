@@ -8,6 +8,12 @@
 
 /Users/luozhen/CLionProjects/codeforces/A266.h
 
+/Users/luozhen/CLionProjects/codeforces/A910.h
+iostream
+-
+set
+-
+
 /Users/luozhen/CLionProjects/codeforces/Bit++.h
 iostream
 -
@@ -161,6 +167,8 @@ test_io.h
 /Users/luozhen/CLionProjects/codeforces/test_io.h
 A266.h
 /Users/luozhen/CLionProjects/codeforces/A266.h
+A910.h
+/Users/luozhen/CLionProjects/codeforces/A910.h
 
 /Users/luozhen/CLionProjects/codeforces/test.h
 iostream
