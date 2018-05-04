@@ -12,7 +12,17 @@
 #include <time.h>
 using namespace std;
 
+struct product{
+    int weight;
+    double price;
+//    product(int weight):weight(weight) {}
+};
+
 int test_main(){
+    
+    product apple, banana, melon;
+    
+    cout << "apple:" << apple.weight << " ," << apple.price << endl;
 
     string str = "lalal" + to_string(1) + "erere";
     time_t t = time(NULL);

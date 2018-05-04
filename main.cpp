@@ -27,9 +27,13 @@
 #include "test_io.h"
 #include "A266.h"
 #include "A910.h"
+#include "leetcode/list_add.h"
+#include "sort/bubble.h"
 using namespace std;
 
 int main() {
-    the_way_to_home();
+    test_func();
+//    test_main();
+    //the_way_to_home();
     return 0;
 }

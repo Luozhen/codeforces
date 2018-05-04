@@ -110,6 +110,12 @@ math.h
 stdlib.h
 -
 
+/Users/luozhen/CLionProjects/codeforces/leetcode/leetcode_lib.h
+
+/Users/luozhen/CLionProjects/codeforces/leetcode/list_add.h
+leetcode_lib.h
+/Users/luozhen/CLionProjects/codeforces/leetcode/leetcode_lib.h
+
 /Users/luozhen/CLionProjects/codeforces/main.cpp
 iostream
 -
@@ -169,6 +175,8 @@ A266.h
 /Users/luozhen/CLionProjects/codeforces/A266.h
 A910.h
 /Users/luozhen/CLionProjects/codeforces/A910.h
+leetcode/list_add.h
+/Users/luozhen/CLionProjects/codeforces/leetcode/list_add.h
 
 /Users/luozhen/CLionProjects/codeforces/test.h
 iostream
