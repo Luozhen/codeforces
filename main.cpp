@@ -29,10 +29,13 @@
 #include "A910.h"
 #include "leetcode/list_add.h"
 #include "sort/bubble.h"
+#include "leetcode/longest_substr_disrepeat.h"
 using namespace std;
 
 int main() {
-    test_func();
+    test_nrs();
+//    bubble_test();
+//    test_func();
 //    test_main();
     //the_way_to_home();
     return 0;

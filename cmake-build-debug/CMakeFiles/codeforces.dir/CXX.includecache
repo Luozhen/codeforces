@@ -116,6 +116,12 @@ stdlib.h
 leetcode_lib.h
 /Users/luozhen/CLionProjects/codeforces/leetcode/leetcode_lib.h
 
+/Users/luozhen/CLionProjects/codeforces/leetcode/longest_substr_disrepeat.h
+set
+-
+map
+-
+
 /Users/luozhen/CLionProjects/codeforces/main.cpp
 iostream
 -
@@ -177,6 +183,12 @@ A910.h
 /Users/luozhen/CLionProjects/codeforces/A910.h
 leetcode/list_add.h
 /Users/luozhen/CLionProjects/codeforces/leetcode/list_add.h
+sort/bubble.h
+/Users/luozhen/CLionProjects/codeforces/sort/bubble.h
+leetcode/longest_substr_disrepeat.h
+/Users/luozhen/CLionProjects/codeforces/leetcode/longest_substr_disrepeat.h
+
+/Users/luozhen/CLionProjects/codeforces/sort/bubble.h
 
 /Users/luozhen/CLionProjects/codeforces/test.h
 iostream

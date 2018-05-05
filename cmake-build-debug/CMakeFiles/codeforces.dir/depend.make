@@ -20,7 +20,9 @@ CMakeFiles/codeforces.dir/main.cpp.o: ../Way_Too_Long_Words.h
 CMakeFiles/codeforces.dir/main.cpp.o: ../block_ali.h
 CMakeFiles/codeforces.dir/main.cpp.o: ../leetcode/leetcode_lib.h
 CMakeFiles/codeforces.dir/main.cpp.o: ../leetcode/list_add.h
+CMakeFiles/codeforces.dir/main.cpp.o: ../leetcode/longest_substr_disrepeat.h
 CMakeFiles/codeforces.dir/main.cpp.o: ../main.cpp
+CMakeFiles/codeforces.dir/main.cpp.o: ../sort/bubble.h
 CMakeFiles/codeforces.dir/main.cpp.o: ../test.h
 CMakeFiles/codeforces.dir/main.cpp.o: ../test_io.h
 CMakeFiles/codeforces.dir/main.cpp.o: ../yuanqiao.h
