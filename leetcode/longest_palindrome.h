@@ -15,5 +15,5 @@ class Solution {
 };
 
 void test_palindrome(){
-    
+
 }

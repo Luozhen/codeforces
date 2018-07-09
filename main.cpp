@@ -33,10 +33,14 @@
 using namespace std;
 
 int main() {
-    test_nrs();
-//    bubble_test();
+//    test_nrs();
+    bubble_test();
 //    test_func();
 //    test_main();
     //the_way_to_home();
+//    int one, two;
+//    std::cin >> one >> two;
+//    int sanmu = one > two ? one : two;
+//    std::cout << "sanmu:" << sanmu << std::endl;
     return 0;
 }
